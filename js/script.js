@@ -74,16 +74,76 @@
 //         alert('There is no such day of the week')
 // }
 
-let hour = +prompt('Enter hour')
+// let hour = +prompt('Enter hour')
 
-if(hour >= 6 && hour <= 12){
-    alert('Good morning')
-}else if(hour >= 12 && hour <= 18){
-    alert('Good afternoon')
-}else if(hour >= 18 && hour <= 23){
-    alert('Good evening')
-}else if( hour >= 0 && hour < 6){
-    alert('Good night')
-}else{
-    alert('Invalid number')
+// if(hour >= 6 && hour <= 12){
+//     alert('Good morning')
+// }else if(hour >= 12 && hour <= 18){
+//     alert('Good afternoon')
+// }else if(hour >= 18 && hour <= 23){
+//     alert('Good evening')
+// }else if( hour >= 0 && hour < 6){
+//     alert('Good night')
+// }else{
+//     alert('Invalid number')
+// }
+
+// let age = +prompt('Enter your age')
+
+
+
+// for(let i = 0; i < 1; i++){
+//     let age = +prompt('Enter your age')
+//     if(age < 0 || age > 128){
+//         i--
+//     }
+    
+// }
+
+// let num = [6,7,1,-5,8,120]
+// let x = num[0]
+
+// for(let i = 1;i < num.length;i++){
+//     if(num[i] < x){
+//         x = num[i]
+//     }
+// }
+// console.log(x)
+
+
+//            Homework 2
+
+let num = [12, 23, 34, 54, 2]
+
+let x = 0
+for(let i = 0; i < num.length;i++){
+    x += num[i]
 }
+console.log(x)
+
+let num2 = [12, 3, -2, 45, -10, -8]
+
+let res = 0
+for(let i = 0; i < num2.length; i++){
+    if(num2[i] < 0){
+        res += num2[i]
+    }
+}
+console.log(res * -1)
+
+
+let numbers = [12, 3, -2,-2, 45,45, -10, -10, -8, -8]
+
+let index = 0
+let arr = [0]
+
+for(let i = 0; i < numbers.length; i++){
+    for(let j = i +1; j < numbers.length; j++){
+        if(numbers[i] === numbers[j]){
+            arr[index] =  numbers[i]
+            index++
+        }
+    }
+}
+
+console.log(arr)
