@@ -22,7 +22,9 @@
 
 
 
-// Homework
+//                 Homework 1  
+
+//             even-odd
 
 // let evenOrOdd = +prompt('Enter number')
 
@@ -31,6 +33,9 @@
 // }else{
 //     alert(`${evenOrOdd} is odd number`)
 // }
+
+
+//                find season
 
 // let monthNumber = +prompt('Enter number')
 
@@ -45,6 +50,9 @@
 // }else{
 //     alert('You have entered an invalid number')
 // }
+
+
+///              find day
 
 // let dayNumber = prompt('Enter day')
 
@@ -73,6 +81,8 @@
 //     default:
 //         alert('There is no such day of the week')
 // }
+
+//                 find hour
 
 // let hour = +prompt('Enter hour')
 
@@ -111,39 +121,158 @@
 // console.log(x)
 
 
-//            Homework 2
+//               Homework 2
 
-let num = [12, 23, 34, 54, 2]
+// let num = [12, 23, 34, 54, 2]
 
-let x = 0
-for(let i = 0; i < num.length;i++){
-    x += num[i]
-}
-console.log(x)
+// let x = 0
+// for(let i = 0; i < num.length;i++){
+//     x += num[i]
+// }
+// console.log(x)
 
-let num2 = [12, 3, -2, 45, -10, -8]
+// let num2 = [12, 3, -2, 45, -10, -8]
 
-let res = 0
-for(let i = 0; i < num2.length; i++){
-    if(num2[i] < 0){
-        res += num2[i]
+// let res = 0
+// for(let i = 0; i < num2.length; i++){
+//     if(num2[i] < 0){
+//         res += num2[i]
+//     }
+// }
+// console.log(res * -1)
+
+////////////////////////////////////////
+
+// let numbers = [12, 3, -2,-2, 45,45, -10, -10, -8, -8]
+
+// let index = 0
+// let arr = [0]
+
+// for(let i = 0; i < numbers.length; i++){
+//     for(let j = i +1; j < numbers.length; j++){
+//         if(numbers[i] === numbers[j]){
+//             arr[index] =  numbers[i]
+//             index++
+//         }
+//     }
+// }
+
+// console.log(arr)
+
+////////////////////////////////////
+
+// function calc(arg1, arg2, op = '+'){
+//     if(op == '/' && arg2 === 0){
+//         console.log('Cannot be zero');
+
+//     }else{
+//         switch(op){
+//             case '+':
+//                 console.log(arg1 + arg2)
+//                 break
+//             case '-':
+//                 console.log(arg1 - arg2)
+//                 break
+//             case '*':
+//                 console.log(arg1 * arg2)
+//                 break
+//             case '/':
+//                 console.log(arg1 / arg2)
+//                 break
+//             default:
+//                 console.log('enter operator');
+//         }
+//     }
+   
+// }
+
+// calc(2,0,'/')
+
+
+
+
+
+/////////////////////////////////////
+
+//                 Homework 3
+
+let arr = [2,4,5,6,45,34,9]
+
+function calcAverage(numbers){
+    let length = numbers.length
+
+    let result = 0
+
+    for(let i = 0; i < length; i++){
+        result += numbers[i]
+
     }
+    return result / length
 }
-console.log(res * -1)
+
+let  countAverage =  calcAverage(arr)
+
+console.log(countAverage);
+
+////////////////////////////////////////////////
+let x = 'non'
+let y = 'some'
+
+function isPalindrom(string){
+    let res = ''
+    let res2 = ''
 
 
-let numbers = [12, 3, -2,-2, 45,45, -10, -10, -8, -8]
+        for(let j = string.length - 1; j >= 0; j--){
+                        
+           for(let i = 0; i < string.length;i++){
 
-let index = 0
-let arr = [0]
+                return string[i] === string[j] ? true : false
+            }
+        
+        }
+    
 
-for(let i = 0; i < numbers.length; i++){
-    for(let j = i +1; j < numbers.length; j++){
-        if(numbers[i] === numbers[j]){
-            arr[index] =  numbers[i]
-            index++
+}
+let palindrom = isPalindrom(x)
+console.log(palindrom);
+
+/////////////////////////////////////
+
+
+function isPalindrom(str) { 
+
+    let result = ''
+
+    for (let i = 0; i < str.length; i++){
+        result = str[i] +=  result 
+    }
+    return str === result ? true : false
+}
+
+let palindrom2 = isPalindrom(x)
+
+console.log(palindrom2);
+
+/////////////////////////////////
+
+let str = 'evaluation'
+
+
+function countVovels(counter){
+    let res = ''
+    let vovels = 'aeiou'
+    
+    for(let i = 0; i < counter.length; i++ ){
+        for(let j = 0; j < vovels.length; j++ ){
+            if(counter[i] === vovels[j]){
+                res++
+            }
         }
     }
+    return res > 0 ? res : 0
 }
 
-console.log(arr)
+let vovels = countVovels(str)
+
+console.log(vovels);
