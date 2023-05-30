@@ -215,30 +215,29 @@ let  countAverage =  calcAverage(arr)
 console.log(countAverage);
 
 ////////////////////////////////////////////////
-let x = 'non'
-let y = 'some'
-
-function isPalindrom(string){
-    let res = ''
-    let res2 = ''
+let x = 'abva'
+let y = 'some' 
 
 
-        for(let j = string.length - 1; j >= 0; j--){
-                        
-           for(let i = 0; i < string.length;i++){
-
-                return string[i] === string[j] ? true : false
-            }
-        
-        }
-    
-
-}
-let palindrom = isPalindrom(x)
-console.log(palindrom);
+///////////    siklni orqaga aylantirish    ////////////
+// for(let i = 11 - 1;i > 0;i--){
+//     console.log(i);
+// }
 
 /////////////////////////////////////
+function isPalindrom(str) { 
 
+    let result = ''
+
+    for (let i = 0; i < str.length; i++){
+        result = str[i] +=  result 
+    }
+    return str === result ? true : false
+}
+
+let palindrom2 = isPalindrom(x)
+
+console.log(palindrom2);
 
 /////////////////////////////////
 
