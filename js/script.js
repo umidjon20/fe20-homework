@@ -240,20 +240,6 @@ console.log(palindrom);
 /////////////////////////////////////
 
 
-function isPalindrom(str) { 
-
-    let result = ''
-
-    for (let i = 0; i < str.length; i++){
-        result = str[i] +=  result 
-    }
-    return str === result ? true : false
-}
-
-let palindrom2 = isPalindrom(x)
-
-console.log(palindrom2);
-
 /////////////////////////////////
 
 let str = 'evaluation'
